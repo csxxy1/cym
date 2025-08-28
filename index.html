@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NyaFun最新发布页 - 获取最新网址和客户端下载">
+    <meta name="keywords" content="NyaFun,发布页,最新网址,客户端下载">
+    <title>次元喵永久地址</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap">
+    <style>
+        :root {
+            --primary-color: #4361ee;
+            --secondary-color: #3a0ca3;
+            --accent-color: #f72585;
+            --text-color: #2b2d42;
+            --light-bg: #f8f9fa;
+            --white: #ffffff;
+            --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background-color: var(--light-bg);
+            color: var(--text-color);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* PC端整体放大20% */
+        .container {
+            display: flex;
+            max-width: 1320px; /* 原1100px放大20% */
+            width: 100%;
+            min-height: 720px; /* 原600px放大20% */
+            background-color: var(--white);
+            border-radius: 20px; /* 同比放大 */
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            animation: fadeIn 0.8s ease-out;
+            position: relative;
+        }
+
+        .image-container {
+            width: 50%;
+            background-image: url('https://v2.xxapi.cn/api/randomAcgPic?type=wap&return=302');
+            background-size: cover;
+            background-position: center;
+            display: block;
+        }
+
+        .content {
+            flex: 1;
+            padding: 48px; /* 原40px放大20% */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .header {
+            margin-bottom: 28px; /* 原24px同比放大 */
+            position: relative;
+        }
+
+        .header h1 {
+            font-size: 3rem; /* 原2.5rem放大20% */
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 10px; /* 同比放大 */
+        }
+
+        .header p {
+            font-size: 1.2rem; /* 原1rem放大20% */
+            color: var(--text-color);
+            opacity: 0.8;
+        }
+
+        .announcement {
+            background-color: rgba(67, 97, 238, 0.1);
+            padding: 20px 24px; /* 原16px 20px放大20% */
+            border-radius: 14px; /* 同比放大 */
+            margin-bottom: 36px; /* 原30px放大20% */
+            border-left: 5px solid var(--primary-color); /* 同比放大 */
+            width: 100%;
+            max-width: 600px; /* 原500px放大20% */
+        }
+
+        .announcement p {
+            font-size: 1.32rem; /* 原1.1rem放大20% */
+            margin: 10px 0; /* 原8px同比放大 */
+            word-break: break-word;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 14px; /* 原12px同比放大 */
+            width: 100%;
+            max-width: 480px; /* 原400px放大20% */
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 17px 34px; /* 原14px 28px放大20% */
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 60px; /* 同比放大 */
+            font-weight: 500;
+            transition: var(--transition);
+            width: 100%;
+            min-width: 264px; /* 原220px放大20% */
+            box-shadow: 0 4px 10px rgba(67, 97, 238, 0.3);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: 1.2rem; /* 按钮文字同比放大 */
+        }
+
+        .btn:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(67, 97, 238, 0.4);
+        }
+
+        .btn-accent {
+            background-color: var(--accent-color);
+            box-shadow: 0 4px 10px rgba(247, 37, 133, 0.3);
+        }
+
+        .btn-accent:hover {
+            background-color: #d91a6d;
+            box-shadow: 0 6px 15px rgba(247, 37, 133, 0.4);
+        }
+
+        .footer {
+            margin-top: 36px; /* 原30px放大20% */
+            font-size: 1.08rem; /* 原0.9rem放大20% */
+            color: var(--text-color);
+            opacity: 0.7;
+        }
+
+        /* 手机端整体缩小15% */
+        @media (max-width: 768px) {
+            body {
+                background-image: url('https://v2.xxapi.cn/api/randomAcgPic?type=wap&return=302');
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+                padding: 13px; /* 原15px缩小15% */
+            }
+
+            .container {
+                max-width: 85%; /* 整体缩小 */
+                min-height: auto;
+                backdrop-filter: blur(10px);
+                background-color: rgba(255, 255, 255, 0.15);
+                box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+                border: 1px solid rgba(255, 255, 255, 0.18);
+                border-radius: 14px; /* 同比缩小 */
+            }
+
+            .image-container {
+                display: none;
+            }
+
+            .content {
+                padding: 21px 15px; /* 原25px 18px缩小15% */
+                background-color: rgba(255, 255, 255, 0.22);
+                border-radius: 14px; /* 同比缩小 */
+                backdrop-filter: blur(4px);
+                border: 1px solid rgba(255, 255, 255, 0.25);
+            }
+
+            .header {
+                margin-bottom: 20px; /* 同比缩小 */
+            }
+
+            .header h1 {
+                font-size: 1.7rem; /* 原2rem缩小15% */
+            }
+
+            .header p {
+                font-size: 0.85rem; /* 同比缩小 */
+            }
+
+            .announcement {
+                padding: 12px 14px; /* 原14px 16px缩小15% */
+                margin: 0 auto 20px; /* 原24px缩小15% */
+                width: 94%;
+                border-left-width: 3px; /* 同比缩小 */
+            }
+
+            .announcement p {
+                font-size: 0.9rem; /* 同比缩小 */
+                margin: 5px 0; /* 原6px缩小15% */
+            }
+
+            .links {
+                gap: 10px; /* 同比缩小 */
+                max-width: 100%;
+            }
+            
+            .btn {
+                padding: 10px 20px; /* 原12px 24px缩小15% */
+                min-height: 42px; /* 原50px缩小15% */
+                min-width: 0; /* 取消最小宽度限制 */
+                font-size: 0.85rem; /* 按钮文字缩小 */
+                white-space: normal;
+            }
+
+            .footer {
+                margin-top: 25px; /* 同比缩小 */
+                font-size: 0.77rem; /* 同比缩小 */
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container"></div>
+        
+        <div class="content">
+            <div class="header">
+                <h1>次元喵永久地址</h1>
+                <p>ctrl+D即可收藏网址✨</p>
+            </div>
+            
+            <div class="announcement">
+				
+				欢迎回家
+				
+	
+            </div>
+            
+            <div class="links">
+                <a href="http://meirl.cn" target="_blank" class="btn btn-accent">安卓下载</a>
+
+            </div>
+            
+            <div class="footer">
+                <p>© 2025 次元喵</p>
+            </div>
+        </div>
+
+</html>
